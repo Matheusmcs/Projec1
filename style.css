@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'FonteLogo';
+    src: url(computer-font.ttf);
+}
+
+.par {
+    text-align: justify;
+    text-indent: 50px;
+}
+
+.body {
+    background-color: #dddddd;
+    color: rgba(0, 0, 0, 1);
+}
+
+.photo {
+    position: relative;
+    border: 8px solid rgb(255, 255, 255);
+    box-shadow: 1px 1px 4px black;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+}
+
+.photo figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+
+.photo:hover figcaption {
+    opacity: 1;
+}
+
+nav#Menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 400px;
+}
+
+nav#Menu li {
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+}
+
+nav#Menu {
+    display: block;
+}
+
+nav#Menu h1 {
+    display: none;
+}
+
+nav#Menu li:hover {
+    background-color: #606060;
+}
+
+nav#Menu a {
+    color: black;
+    text-decoration: none;
+}
+
+nav#Menu a:hover {
+    color: white;
+
+}
+
+div#interface {
+    width: 900px;
+    background-color: #ffffff;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+    padding: 10px 10px 10px 10px;
+}
+
+#icon {
+    position: absolute;
+    left: 950px;
+    top: 60px;
+}
+
+#cabecalho {
+    border-bottom: 1px rgb(0, 0, 0) solid;
+    height: 150px;
+    background: url(imagens/_imagens/glass-logo-peq.jpg) no-repeat 0px 80px;
+}
+
+#cabecalho h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+#cabecalho h2 {
+    font-family: 'Kanit', sans-serif;
+    color: #888888;
+    font-size: 15pt;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+#Corpo {
+    display: block;
+    width: 520px;
+    float: left;
+    border-right: 1px solid gray;
+    padding-right: 15px;
+}
+
+#lateral {
+    display: block;
+    width: 350px;
+    float: right;
+}
+
+#rodape {
+    clear: both;
+    border-top: 1px solid gray;
+}
+#rodape p{
+    text-align: center;
+}
