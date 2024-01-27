@@ -7,6 +7,11 @@
     <title>TUDO SOBRE GOOGLE GLASS</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
+<script>
+    function mudaFoto(foto) {
+        document.getElementById("icon").src = foto;
+    }
+</script>
 
 <body class="body">
     <div id="interface">
@@ -23,11 +28,21 @@
             <nav id="Menu">
                 <h1>Menu Principal</h1>
                 <ul type="square">
-                    <li> <a href="index.html">Home</a></li>
-                    <li> <a href="specs.html">Especificações</a></li>
-                    <li> <a href="fotos.html">Fotos</a></li>
-                    <li> <a href="multimidia.html">Multimídia</a></li>
-                    <li> <a href="fale-conosco.html">Fale conosco</a></li>
+                    <li onmouseover="mudaFoto('imagens/_imagens/home.png')"
+                        onmouseout="mudaFoto('imagens/_imagens/glass-oculos-preto-peq.png')"><a
+                            href="index.html">Home</a></li>
+                    <li onmouseover="mudaFoto('imagens/_imagens/especificacoes.png')"
+                        onmouseout="mudaFoto ('imagens/_imagens/imagens/_imagens/glass-oculos-preto-peq.png')"><a
+                            href="specs.html">Especificações</a></li>
+                    <li onmouseover="mudaFoto ('imagens/_imagens/fotos.png')"
+                        onmouseout="mudaFoto ('imagens/_imagens/glass-oculos-preto-peq.png')"><a
+                            href="fotos.html">Fotos</a></li>
+                    <li onmouseover="mudaFoto ('imagens/_imagens/multimidia.png')"
+                        onmouseout="mudaFoto ('imagens/_imagens/glass-oculos-preto-peq.png')"><a
+                            href="multimidia.html">Multimídia</a></li>
+                    <li onmouseover="mudaFoto ('imagens/_imagens/contato.png')"
+                        onmouseout="mudaFoto ('imagens/_imagens/imagens/_imagens/glass-oculos-preto-peq.png')"><a
+                            href="fale-conosco.html">Fale conosco</a></li>
                 </ul>
             </nav>
         </header>
@@ -139,7 +154,7 @@
         </aside>
         <footer id="rodape">
             <p>Copyright &copy; 2024 - By Matheus Clementino <br>
-                <a href="https://www.instagram.com/_mcsmath?igsh=MTN6cTAweWd5Y1iMQ==" target="_blank">Instagram</a>
+                <a href="https://www.linkedin.com/in/matheusdev0/" target="_blank">Linkedin</a>
             </p>
         </footer>
 
