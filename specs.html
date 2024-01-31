@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="specs.css">
 </head>
 <script language="javascript" src="_javascript/funcoes.js"></script>
+<script>
+    function mudaFoto(foto) {
+        document.getElementById("icon").src = foto;
+    }
+</script>
 
 <body>
     <div id="interface">
@@ -21,24 +26,24 @@
                 </h1>
                 <h2>A revolução do Google está chegando</h2>
             </hgroup>
-            <img id="icon" src="imagens/_imagens/glass-oculos-preto-peq.png" alt="">
+            <img id="icon" src="imagens/_imagens/especificacoes.png" alt="">
             <nav id="Menu">
                 <h1>Menu Principal</h1>
                 <ul type="square">
                     <li onmouseover="mudaFoto('imagens/_imagens/home.png')"
-                        onmouseout="mudaFoto('imagens/_imagens/glass-oculos-preto-peq.png')"><a
+                        onmouseout="mudaFoto('imagens/_imagens/especificacoes.png')"><a
                             href="index.html">Home</a></li>
                     <li onmouseover="mudaFoto('imagens/_imagens/especificacoes.png')"
-                        onmouseout="mudaFoto ('imagens/_imagens/imagens/_imagens/glass-oculos-preto-peq.png')"><a
+                        onmouseout="mudaFoto ('imagens/_imagens/especificacoes.png')"><a
                             href="specs.html">Especificações</a></li>
                     <li onmouseover="mudaFoto ('imagens/_imagens/fotos.png')"
-                        onmouseout="mudaFoto ('imagens/_imagens/glass-oculos-preto-peq.png')"><a
+                        onmouseout="mudaFoto ('imagens/_imagens/especificacoes.png')"><a
                             href="fotos.html">Fotos</a></li>
                     <li onmouseover="mudaFoto ('imagens/_imagens/multimidia.png')"
-                        onmouseout="mudaFoto ('imagens/_imagens/glass-oculos-preto-peq.png')"><a
+                        onmouseout="mudaFoto ('imagens/_imagens/especificacoes.png')"><a
                             href="multimidia.html">Multimídia</a></li>
                     <li onmouseover="mudaFoto ('imagens/_imagens/contato.png')"
-                        onmouseout="mudaFoto ('imagens/_imagens/imagens/_imagens/glass-oculos-preto-peq.png')"><a
+                        onmouseout="mudaFoto ('imagens/_imagens/especificacoes.png')"><a
                             href="fale-conosco.html">Fale conosco</a></li>
                 </ul>
             </nav>
@@ -59,11 +64,22 @@
                     ponto vermelho vai te levar a um lugar cheio de novas informações.
                 </p>
                 <section id="conteudo">
-                    <img src="imagens/_imagens/glass-esquema-marcado.jpg" alt="">
+                    <img src="imagens/_imagens/glass-esquema-marcado.jpg" alt="" usemap="#mymap">
+                    <map name="mymap">
+                        <area shape="rect" coords="180,209,269,255" href="google-glass.html#tela" target="janela">
+                        <area shape="circle" coords="158,243,12" href="google-glass.html#camera" target="janela">
+                        <area shape="circle" coords="76,51,12" href="google-glass.html#batery" target="janela">
+                        <area shape="poly" coords="27,144,82,216,83,250,26,167" href="google-glass.html#sens" target="janela">
+                    </map>
                     <iframe id="frame-spec" src="google-glass.html" name="janela" frameborder="0"></iframe>
                 </section>
             </article>
         </section>
+        <footer id="rodape">
+            <p>Copyright &copy; 2024 - By Matheus Clementino <br>
+                <a href="https://www.linkedin.com/in/matheusdev0/" target="_blank">Linkedin</a>
+            </p>
+        </footer>
 </body>
 
 </html>

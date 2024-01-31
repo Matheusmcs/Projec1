@@ -9,8 +9,6 @@ iframe#frame-spec {
     border: none;
     overflow: hidden;
 }
-
-iframe#frame-spec::-webkit-scrollbar {
+iframe#frame-spec::-webkit-scrollbar{
     display: none;
-    
-}
+} 
