@@ -1,25 +1,82 @@
-Google Glass
-A revolução do Google está chegando
+<!DOCTYPE html>
+<html lang="pt-br">
 
-[AQUI ENTRA UMA FOTO]
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tudo sobre Google Glass</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="specs.css">
+</head>
+<script language="javascript" src="_javascript/funcoes.js"></script>
+<script>
+    function mudaFoto(foto) {
+        document.getElementById("icon").src = foto;
+    }
+</script>
 
-Menu Principal
-- Home
-- Especificações
-- Fotos
-- Multimídia
-- Fale conosco
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+            <hgroup>
+                <h1 rel="preconnect" href="https://fonts.googleapis.com">
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap"
+                        rel="stylesheet">Google Glass
+                </h1>
+                <h2>A revolução do Google está chegando</h2>
+            </hgroup>
+            <img id="icon" src="imagens/_imagens/multimidia.png" alt="">
+            <nav id="Menu">
+                <h1>Menu Principal</h1>
+                <ul type="square">
+                    <li onmouseover="mudaFoto('imagens/_imagens/home.png')"
+                        onmouseout="mudaFoto('imagens/_imagens/multimidia.png')"><a href="index.html">Home</a></li>
+                    <li onmouseover="mudaFoto('imagens/_imagens/especificacoes.png')"
+                        onmouseout="mudaFoto ('imagens/_imagens/multimidia.png')"><a
+                            href="specs.html">Especificações</a></li>
+                    <li onmouseover="mudaFoto ('imagens/_imagens/fotos.png')"
+                        onmouseout="mudaFoto ('imagens/_imagens/multimidia.png')"><a href="fotos.html">Fotos</a>
+                    </li>
+                    <li onmouseover="mudaFoto ('imagens/_imagens/multimidia.png')"
+                        onmouseout="mudaFoto ('imagens/_imagens/multimidia.png')"><a
+                            href="multimidia.html">Multimídia</a></li>
+                    <li onmouseover="mudaFoto ('imagens/_imagens/contato.png')"
+                        onmouseout="mudaFoto ('imagens/_imagens/multimidia.png')"><a href="fale-conosco.html">Fale
+                            conosco</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="corpo-full">
+            <article class="NP">
+                <header id="cabart">
+                    <hgroup>
+                        <h3>Glass > Multimídia</h3>
+                        <h1>Sons e Vídeos</h1>
+                        <h2>Por Matheus Clementino</h2>
+                        <h3 class="right">Atualizado em 07/Janeiro/2024</h3>
+                    </hgroup>
+                </header>
+                <div id="Tv">
+                    <audio id="music" controls="controls" src="videosaudio/2009-lovers-carvings-bibio.mp3"
+                        type="audio/mpeg">
+                        <source src="videosaudio/2009-lovers-carvings-bibio.m4a" type="audio/x-aac">
+                        <source src="videosaudio/ 2009-lovers-carvings-bibio.ogg" type="audio-ogg">
+                    </audio>
+                    <video id="film" controls="controls">
+                        <source src="videosaudio/getting-started.mp4" type="video/mp4">
+                        <source src="videosaudio/getting-started.webm" type="video/webm">
+                        <source src="videosaudio/getting-started.ogg" type="video/ogg">
+                    </video>
+                </div>
+            </article>
+        </section>
+        <footer id="rodape">
+            <p>Copyright &copy; 2024 - By Matheus Clementino <br>
+                <a href="https://www.linkedin.com/in/matheusdev0/" target="_blank">Linkedin</a>
+            </p>
+        </footer>
+    </div>
+</body>
 
-Glass > Multimídia
-Sons e Vídeos
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
-
-
-Áudio e Vídeo
-
-[AQUI ENTRA UM VÍDEO]
-[AQUI ENTRA UM ÁUDIO]
-
-Copyright 2013 - by Gustavo Guanabara
-Facebook | Twitter
+</html>
