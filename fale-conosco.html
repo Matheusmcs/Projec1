@@ -1,47 +1,141 @@
-Google Glass
-A revolução do Google está chegando
+<!DOCTYPE html>
+<html lang="pt-br">
 
-[AQUI ENTRA UMA FOTO]
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tudo sobre Google Glass</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+<script language="javascript" src="_javascript/funcoes.js"></script>
+<script>
+    function mudaFoto(foto) {
+        document.getElementById("icon").src = foto;
+    }
+</script>
+<script>
+    function Calc_total() {
+        var qtd = parseInt(document.getElementById('Cqtd').value);
+        tot = qtd * 1500;
+        document.getElementById('Ctot').value = tot
+    }
+</script>
 
-Menu Principal
-- Home
-- Especificações
-- Fotos
-- Multimídia
-- Fale conosco
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+            <hgroup>
+                <h1 rel="preconnect" href="https://fonts.googleapis.com">
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap"
+                        rel="stylesheet">Google Glass
+                </h1>
+                <h2>A revolução do Google está chegando</h2>
+            </hgroup>
+            <img id="icon" src="imagens/_imagens/contato.png" alt="">
+            <nav id="Menu">
+                <h1>Menu Principal</h1>
+                <ul type="square">
+                    <li onmouseover="mudaFoto('imagens/_imagens/home.png')"
+                        onmouseout="mudaFoto('imagens/_imagens/contato.png')"><a href="index.html">Home</a></li>
+                    <li onmouseover="mudaFoto('imagens/_imagens/especificacoes.png')"
+                        onmouseout="mudaFoto ('imagens/_imagens/contato.png')"><a href="specs.html">Especificações</a>
+                    </li>
+                    <li onmouseover="mudaFoto ('imagens/_imagens/fotos.png')"
+                        onmouseout="mudaFoto ('imagens/_imagens/contato.png')"><a href="fotos.html">Fotos</a>
+                    </li>
+                    <li onmouseover="mudaFoto ('imagens/_imagens/multimidia.png')"
+                        onmouseout="mudaFoto ('imagens/_imagens/contato.png')"><a href="multimidia.html">Multimídia</a>
+                    </li>
+                    <li onmouseover="mudaFoto ('imagens/_imagens/contato.png')"
+                        onmouseout="mudaFoto ('imagens/_imagens/contato.png')"><a href="fale-conosco.html">Fale
+                            conosco</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="corpo-full">
+            <article class="NP">
+                <header id="cabart">
+                    <hgroup>
+                        <h3>Fale-Conosco > Contato</h3>
+                        <h1>Formulário de Contato</h1>
+                        <h2>Por Matheus Clementino</h2>
+                        <h3 class="right">Atualizado em 07/Janeiro/2024</h3>
+                    </hgroup>
+                </header>
+                <form action="" method="post" id="Fcontato" oninput="Calc_total();">
+                    <fieldset id="user">
+                        <legend>Identificação do Usuário</legend>
+                        <p><label for="Cnome">Nome:</label><input type="text" name="Tnone" id="Cnome" size="20"
+                                maxlength="30" placeholder="Nome Completo"> </p>
+                        <p> <label for="Csenha">Senha:</label><input type="password" name="senha" id="Csenha" size="8"
+                                maxlength="8" placeholder="8"></p>
+                        <p> <label for="Cmail">E-mail:</label><input type="email" name="Tmail" id="Cmail" size="20"
+                                maxlength="40"></p>
+                        <fieldset id="sexo">
+                            <legend>Sexo:</legend>
+                            <input type="radio" name="Tsexo" id="Cmasc"><label for="Cmasc">Masculino</label> <br>
+                            <input type="radio" name="Tsexo" id="Cfem"><label for="Cfem">Feminino</label>
+                        </fieldset>
+                        <p> <label for="Cdate">Data de Nascimento:</label><input type="date" name="" id="Cdate"></p>
+                    </fieldset>
+                    <fieldset id="andress">
+                        <legend>Endereço do Usuário</legend>
+                        <p><label for="Crua">Logradouro:</label><input type="text" name="Trua" id="Crua" size="13"
+                                maxlength="80" placeholder="Rua/Av..."></p>
+                        <p><label for="Cnumb">Número:</label><input type="number" name="Tnumb" id="Cnumb" min="0"
+                                max="9999"></p>
+                        <p><label for="Cestad">Estado:</label><select name="Test" id="Cestad">
+                                <optgroup label="Região Sudeste">
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="SP" selected>São Paulo</option>
+                                    <option value="MG'"> Minas Gerais</option>
+                                    <option value="BH">Belo Horizonte</option>
+                                </optgroup>
+                                <optgroup label="Região Sul">
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                </optgroup>
+                            </select></p>
+                        <p><label for="Ccity">Cidade:</label><input type="text" name="Tcity" id="Ccity" maxlength="40"
+                                size="20" placeholder="Sua cidade" list="cidades">
+                        </p>
+                        <datalist id="cidades">
+                            <option value="Rio de Janeiro"></option>
+                            <option value="Nova Iguaçu"></option>
+                            <option value="Niterói"></option>
+                        </datalist>
+                    </fieldset>
+                    <fieldset id="chat">
+                        <legend>Mensagem do Usuário</legend>
+                        <p><label for="Curg">Grau de Urgência:</label>Mín<input type="range" name="Turg" id="Curg"
+                                min="0" max="10" step="2" />Máx</p>
+                        <p><label for="Cmsg">Mensagem:</label><textarea name="Tmgs" id="Cmsg" cols="45" rows="5"
+                                placeholder="Deixe aqui sua Mensagem"></textarea></p>
+                    </fieldset>
+                    <fieldset id="pedido">
+                        <legend>Quero um Google Glass</legend>
+                        <p><input type="checkbox" name="Tped" id="Cped" checked><label for="Cped">Gostaria de adquirir
+                                um Google
+                                Glass quando disponível</label></p>
+                        <p><label for="Ccor">Cor:</label><input type="color" name="Tcor" id="Ccor" value="#0000FF"></p>
+                        <p><label for="Cqtd">Quantidade:</label><input type="number" name="Tqtd" id="Cqtd" min="0"
+                                max="5" value="0"></p>
+                        <p><label for="Ctot">Preço Total: R$</label><input type="text" name="Ttot" id="Ctot"
+                                placeholder="Valor atual" readonly></p>
+                    </fieldset>
+                    <input type="image" name="Tenviar" id="Cenviar" src="imagens/_imagens/botao-enviar.png">
+                </form>
+            </article>
+        </section>
+        <footer id="rodape">
+            <p>Copyright &copy; 2024 - By Matheus Clementino <br>
+                <a href="https://www.linkedin.com/in/matheusdev0/" target="_blank">Linkedin</a>
+            </p>
+        </footer>
+    </div>
+</body>
 
-Fale Conosco > Contato
-Formulário de Contato
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
-
-Identificação do Usuário
-    Nome:
-    Senha:
-    E-mail:
-    Sexo:
-        - Masculino
-        - Feminino
-    Data de Nascimento:
-
-Endereço do Usuário
-    Logradouro:
-    Número:
-    Estado:
-    Cidade:
-
-Mensagem do Usuário
-    Grau de Urgência:
-    Mensagem:
-
-Quero um Google Glass
-    Gostaria de adquirir um Google Glass quando disponível
-    Cor:
-    Quantidade:
-    Preço Total: R$
-
-
-[BOTÃO ENVIAR]
-
-Copyright 2013 - by Gustavo Guanabara
-Facebook | Twitter
+</html>
