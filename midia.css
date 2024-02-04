@@ -1,0 +1,14 @@
+#vd{
+    width: 350px;
+    display: block;
+    position: relative;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, .3);
+}
+#dv{
+display: block;
+position: relative;
+width: 490px;
+left: 10px;
+top: -5px;
+box-shadow: 4px 4px 8px rgba(0, 0, 0, .3);
+}

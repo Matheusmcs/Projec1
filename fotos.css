@@ -3,7 +3,7 @@
     margin: 0, auto;
     padding: 50px;
     overflow: hidden;
-    list-style: none; 
+    list-style: none;
 }
 
 #AF li {
@@ -59,42 +59,51 @@
     background-size: 400px 400px;
     background-color: white;
 }
-#AF li span{
+
+#AF li span {
     opacity: 0;
     color: white;
     text-shadow: 1px 1px 1px black;
     background-color: rgba(0, 0, 0, .2);
     font-size: 9pt;
     line-height: 370px;
-padding: 5px;
+    padding: 5px;
 }
-#AF li:hover span{
+
+#AF li:hover span {
     opacity: 1;
 }
-#AF li#foto1:hover{
+
+#AF li#foto1:hover {
     background-position: 0px 0px;
     background-size: 200px 200px;
 }
-#AF li#foto2:hover{
+
+#AF li#foto2:hover {
     background-position: 0px 0px;
     background-size: 200px 200px;
 }
-#AF li#foto3:hover{
+
+#AF li#foto3:hover {
     background-position: 0px 0px;
     background-size: 200px 200px;
 }
-#AF li#foto4:hover{
+
+#AF li#foto4:hover {
     background-position: 0px 0px;
     background-size: 200px 200px;
 }
-#AF li#foto5:hover{
+
+#AF li#foto5:hover {
     background-position: 0px 0px;
     background-size: 200px 200px;
 }
-#AF li#foto6:hover{
+
+#AF li#foto6:hover {
     background-position: 0px 0px;
     background-size: 200px 200px;
 }
-#AF li:hover{
+
+#AF li:hover {
     -webkit-transform: scale(1.5);
 }

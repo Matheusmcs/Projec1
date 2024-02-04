@@ -12,31 +12,39 @@ textarea {
 }
 
 input:hover,
-textarea {
-    background-color: #dddddd;
+textarea:hover {
+    background-color: #888888;
 }
-legend{
+
+legend {
     color: #888888;
     font-weight: bold;
     font-size: 13pt;
     font-family: sans-serif;
 }
-fieldset{
+
+fieldset {
     border-color: #cecece;
     margin: 20px;
 }
-#sexo{
+
+#sexo {
     width: 150px;
 }
-#user{
+
+#user {
     background: url(imagens/_imagens/icone-contato.png) no-repeat 95% 95%;
 }
-#andress{
+
+#andress {
     background: url(imagens/_imagens/icone-endereco.png) no-repeat 95% 95%;
 }
-#chat{
+
+#chat {
     background: url(imagens/_imagens/icone-mensagem.png) no-repeat 95% 95%;
 }
-#pedido{
+
+
+#pedido {
     background: url(imagens/_imagens/icone-pagamento.png) no-repeat 95% 95%;
 }
