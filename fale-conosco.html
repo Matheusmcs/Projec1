@@ -22,7 +22,7 @@
     }
 </script>
 
-<body>
+<body class="body">
     <div id="interface">
         <header id="cabecalho">
             <hgroup>
@@ -70,9 +70,9 @@
                         <p><label for="Cnome">Nome:</label><input type="text" name="Tnone" id="Cnome" size="20"
                                 maxlength="30" placeholder="Nome Completo"> </p>
                         <p> <label for="Csenha">Senha:</label><input type="password" name="senha" id="Csenha" size="8"
-                                maxlength="8" placeholder="8"></p>
+                                maxlength="8" placeholder="6 carácteres"></p>
                         <p> <label for="Cmail">E-mail:</label><input type="email" name="Tmail" id="Cmail" size="20"
-                                maxlength="40"></p>
+                                maxlength="40" placeholder="ex:anajulia@gmail.com"></p>
                         <fieldset id="sexo">
                             <legend>Sexo:</legend>
                             <input type="radio" name="Tsexo" id="Cmasc"><label for="Cmasc">Masculino</label> <br>
@@ -83,10 +83,10 @@
                     <fieldset id="andress">
                         <legend>Endereço do Usuário</legend>
                         <p><label for="Crua">Logradouro:</label><input type="text" name="Trua" id="Crua" size="13"
-                                maxlength="80" placeholder="Rua/Av..."></p>
+                                maxlength="80" placeholder="Rua/Av"></p>
                         <p><label for="Cnumb">Número:</label><input type="number" name="Tnumb" id="Cnumb" min="0"
                                 max="9999"></p>
-                        <p><label for="Cestad">Estado:</label><select name="Test" id="Cestad">
+                        <p><label for="Cestado">Estado:</label><select name="Test" id="Cestado">
                                 <optgroup label="Região Sudeste">
                                     <option value="RJ">Rio de Janeiro</option>
                                     <option value="SP" selected>São Paulo</option>
@@ -103,6 +103,7 @@
                                 size="20" placeholder="Sua cidade" list="cidades">
                         </p>
                         <datalist id="cidades">
+                            <option value="São Paulo"></option>
                             <option value="Rio de Janeiro"></option>
                             <option value="Nova Iguaçu"></option>
                             <option value="Niterói"></option>
@@ -125,6 +126,11 @@
                                 max="5" value="0"></p>
                         <p><label for="Ctot">Preço Total: R$</label><input type="text" name="Ttot" id="Ctot"
                                 placeholder="Valor atual" readonly></p>
+                    </fieldset>
+                    <fieldset id="term">
+                        <legend>Termos e Privacidade</legend>
+                        <input type="radio" name="Tpriv" id="Cpriv"><label for="Cpriv">Aceito</label> <br>
+                        <input type="radio" name="Tpriv" id="Cpriv"><label for="Cpriv">Não Aceito</label>
                     </fieldset>
                     <input type="image" name="Tenviar" id="Cenviar" src="imagens/_imagens/botao-enviar.png">
                 </form>
